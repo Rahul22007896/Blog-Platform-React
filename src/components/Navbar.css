@@ -1,0 +1,68 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 200vh;
+    position: fixed; /* Fix the navbar at the top of the screen */
+    top: 0; /* Position at the top */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .navbar .logo a {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar .navbar-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar .navbar-links li {
+    margin-left: 1rem;
+  }
+  
+  .navbar .navbar-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar .navbar-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Animation for navbar links */
+  .navbar .navbar-links li a {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .navbar .navbar-links li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar .navbar-links li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  

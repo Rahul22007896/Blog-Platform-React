@@ -1,0 +1,13 @@
+.blog-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .blog-form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid #ddd
+  }  
